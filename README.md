@@ -7,27 +7,37 @@ Simple bash script to ping a list of hosts
 ```
 cd pinger
 chmod +x pinger.sh
-./pinger.sh
+chmod +x coloredping.sh
 ```
 
-Contents of file we're using (ip_list.txt):
+If you want to use colored (red|green for down|up) use coloredping.sh
+
+
+Contents of file we're using (dns.txt):
 ```
-bl@apollo:~/pinger$ cat ip_list.txt
-192.168.1.1
-192.168.1.2
-192.168.1.3
-192.168.1.4
-192.168.1.5
+ec2-user at ip-172-26-4-10 in ~/dev/pinger on master*
+$ cat dns.txt
+1.1.1.1
+1.0.0.1
+8.8.8.8
+8.8.4.4
+9.9.9.9
+208.67.222.222
+208.67.220.220
 ```
 Usage:
 
 ```
-bl@apollo:~/pinger$ ./pinger.sh
+ec2-user at ip-172-26-4-10 in ~/dev/pinger on master*
+$ ./coloredPing.sh
 IP List Filename?
-ip_list.txt
-Node 192.168.1.1 is up
-Node 192.168.1.2 is down
-Node 192.168.1.3 is up
-Node 192.168.1.4 is up
-Node 192.168.1.5 is up
+dns.txt
+1.1.1.1 Up
+1.0.0.1 Up
+8.8.8.8 Up
+8.8.4.4 Up
+9.9.9.9 Up
+208.67.222.222 Up
+208.67.220.220 Up
+
 ```
