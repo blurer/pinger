@@ -1,15 +1,19 @@
 # pinger.sh
-Revamped Jul 2021. Got the idea from this fantastic idea https://github.com/jakejarvis/datacenter-speed-tests, but modified for the following:
+Revamped Jul 2021. Still very much WIP. 
 
-1) make it for latency only 
-2) select single provider
-3) popular DNS servers
-4) custom IPs (local usage, etc).
+Old pinger was simply ping a text IP list. Expanded to include syntax and naming for datancers from: https://github.com/jakejarvis/datacenter-speed-tests 
+
+Revamped pinger to include:
+1) Select single provider
+2) Popular DNS servers
+3) custom IPs (local usage, etc).
+4) Region specific (WIP)
+5) ...tbd
 
 ## Installation and usage
 ``git clone https://github.com/blurer/pinger.git``
 
-Usage, chmod +x or run it with pyton (as shown below). Then use numbers and hit enter. Script runs .ping-{type}.sh and then returns to the menu. 
+Usage, ``chmod +x pinger.py`` or run it with ``python3 pinger.py``. Then use numbers and hit enter. Script runs .ping-{type}.sh and then returns to the menu. 
 
 ```
 [bryan:~/projects/pinger]$ python3 pinger.py                     (master✱) 
@@ -31,7 +35,7 @@ Usage, chmod +x or run it with pyton (as shown below). Then use numbers and hit 
 Select Number (q to quit) 
 ```
 
-## Example - #1 (DNS)
+### Example - #1 (DNS)
 ```
 ###############################################
                   IPv4 DNS
@@ -49,7 +53,7 @@ Select Number (q to quit)
 #############################################
 Press q to quit, 0 to restart) 
 ```
-## Example - #2 (DNS - IPv6)
+### Example - #2 (DNS - IPv6)
 ```
 ###############################################
                   IPv6 DNS
@@ -68,7 +72,7 @@ Press q to quit, 0 to restart)
 Press q to quit, 0 to restart) 
 ```
 
-## Example - #3 (AWS)
+### Example - #3 (AWS)
 ```
 #############################################
                   AWS
