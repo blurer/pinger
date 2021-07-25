@@ -23,15 +23,19 @@ Usage, chmod +x or run it with pyton (as shown below). Then use numbers and hit 
 5: Ping Linode 
 6: Ping GCP
 7: Ping Vultr
-8: Custom
+8: Ping All
+9: Ping All - Region
+10: Custom
+11: Ping VPN
 #############################################
-Select Number (q to quit) 1
+Select Number (q to quit) 
 ```
 
+## Example - #1 (DNS)
 ```
 ###############################################
                   IPv4 DNS
-#############################################
+###############################################
 208.67.222.222:     4.070 ms
 208.67.220.220:     4.149 ms
 8.8.8.8:            4.232 ms
@@ -44,4 +48,52 @@ Select Number (q to quit) 1
 149.112.112.112:    4.390 ms
 #############################################
 Press q to quit, 0 to restart) 
+```
+## Example - #2 (DNS - IPv6)
+```
+###############################################
+                  IPv6 DNS
+###############################################
+2620:119:35::35:    4.245 ms
+2620:119:53::53:    4.233 ms
+2001:4860:4860::8888:                   4.343 ms
+2001:4860:4860::8844:                   4.368 ms
+2a10:50c0::ad1:ff:  3.960 ms
+2a10:50c0::ad2:ff:  4.319 ms
+2606:4700:4700::64:                     5.172 ms
+2606:4700:4700::6400:                   4.788 ms
+2620:fe::fe:        4.190 ms
+2620:fe::9:         4.605 ms
+#############################################
+Press q to quit, 0 to restart) 
+```
+
+## Example - #3 (AWS)
+```
+#############################################
+                  AWS
+#############################################
+us-east-1:          175.369 ms
+us-east-2:          162.349 ms
+us-west-1:          110.469 ms
+us-west-2:          126.753 ms
+ca-central-1:       182.113 ms
+eu-north-1:         280.341 ms
+eu-central-1:       265.024 ms
+eu-west-1:          231.149 ms
+eu-west-2:          222.727 ms
+eu-west-3:          228.833 ms
+eu-north-1:         290.993 ms
+eu-south-1:         256.941 ms
+ap-east-1:          57.533 ms
+ap-northeast-1:     11.611 ms
+ap-northeast-2:     37.497 ms
+ap-south-1:         237.611 ms
+ap-southeast-1:     76.764 ms
+ap-southeast-2:     131.771 ms
+sa-east-1:          282.182 ms
+me-south-1:         264.557 ms
+af-south-1:         384.967 ms
+#############################################
+Press q to quit, 0 for menu) 
 ```
