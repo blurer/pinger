@@ -1,5 +1,10 @@
 # pinger.sh
-Revamped Jul 2021. Got the idea from this fantastic idea https://github.com/jakejarvis/datacenter-speed-tests, but modified to 1) make it for latency only, 2) select single provider, 3) popular DNS servers, and 4) custom IPs (local usage, etc).
+Revamped Jul 2021. Got the idea from this fantastic idea https://github.com/jakejarvis/datacenter-speed-tests, but modified for the following:
+
+1) make it for latency only 
+2) select single provider
+3) popular DNS servers
+4) custom IPs (local usage, etc).
 
 ## Installation and usage
 ``git clone https://github.com/blurer/pinger.git``
