@@ -1,7 +1,7 @@
 # pinger.sh
 Revamped Jul 2021. Still very much WIP. 
 
-Old pinger was simply ping a text IP list. Expanded to include syntax and naming for datancers from: https://github.com/jakejarvis/datacenter-speed-tests 
+Old pinger was simply ping a text IP list. Expanded to include syntax and naming for datancers from: https://github.com/jakejarvis/datacenter-speed-tests - some of the providers changed case and did not work. 
 
 Revamped pinger to include:
 1) Select single provider
