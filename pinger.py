@@ -99,9 +99,10 @@ while choice != 'q':
     elif choice == '8':
         clear()
         print("#"*45)
-        print("                  Linode")
+        print("                  All")
+        print("Please wait. Running in parllel, then sorting.")
         print("#"*45)
-        subprocess.run(["bash", ".ping-linode.sh"])
+        subprocess.run(["bash", ".ping-all.sh | sort"])
         print("#"*45)
     elif choice == '9':
         clear()
@@ -113,8 +114,11 @@ while choice != 'q':
         print("2: Americas")
         print("3: Europe")
         print("4: Africa")
-        subprocess.run(["bash", ".ping-dns.sh"])
         print("#"*45)
+        regionSelect = input("Which Region: ")
+        if regionSelect == "1":
+            print("                  All - APAC")
+            subprocess.run(["bash", ".ping-apac.sh"])            
     elif choice == '10':
         clear()
         print("#"*45)
